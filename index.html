@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>DrugHelper</title>
+   <link href="https://fonts.googleapis.com/css?family=JetBrains+Mono:100,200,300,regular,500,600,700,800,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic" rel="stylesheet" />
+   <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header">
+         <div class="header__container">
+            <h1 class="header__logo">
+               DrugHelper
+            </h1>
+            <nav class="header__nav">
+               <ul class="header__list">
+                  <li id="open-shop-btn" class="header__item"><h1 class="header__link">Shop</h1></li>
+                  <li id="open-cart-btn" class="header__item"><h1 class="header__link">Cart</h1></li>
+               </ul>
+            </nav>
+         </div>
+      </header>
+      <main class="main">
+         <div class="main__container">
+            <nav class="menu">
+               <h1 class="menu__title">Shoop List</h1>
+               <ul class="menu__list" id="shops-list">
+               </ul>
+            </nav>
+            <div class="content" id="drugs-content">
+               <h1 class="content__title">Aviable Drugs</h1>
+               <!-- <ul class="content__list drug-list">
+                  <li class="content__item drug">
+                     <div class="drug__img"><img src="https://i.pinimg.com/564x/2b/66/db/2b66db81ba2345377152f9bdf35ce75f.jpg" alt="Preview"></div>
+                     <div class="drug__body">
+                        <h1 class="drug__title">Paracetamol</h1>
+                        <h2 class="drug__price">$12.33</h2>
+                        <div class="drug__btn">ADD TO CART</div>
+                     </div>
+                  </li>
+                  <li class="content__item drug">
+                     <div class="drug__img"><img src="https://i.pinimg.com/564x/2b/66/db/2b66db81ba2345377152f9bdf35ce75f.jpg" alt="Preview"></div>
+                     <div class="drug__body">
+                        <h1 class="drug__title">Paracetamol</h1>
+                        <h2 class="drug__price">$12.33</h2>
+                        <div class="drug__btn">ADD TO CART</div>
+                     </div>
+                  </li>
+                  <li class="content__item drug">
+                     <div class="drug__img"><img src="https://i.pinimg.com/564x/2b/66/db/2b66db81ba2345377152f9bdf35ce75f.jpg" alt="Preview"></div>
+                     <div class="drug__body">
+                        <h1 class="drug__title">Paracetamol</h1>
+                        <h2 class="drug__price">$12.33</h2>
+                        <div class="drug__btn">ADD TO CART</div>
+                     </div>
+                  </li>
+                  <li class="content__item drug">
+                     <div class="drug__img"><img src="https://i.pinimg.com/564x/2b/66/db/2b66db81ba2345377152f9bdf35ce75f.jpg" alt="Preview"></div>
+                     <div class="drug__body">
+                        <h1 class="drug__title">Paracetamol</h1>
+                        <h2 class="drug__price">$12.33</h2>
+                        <div class="drug__btn">ADD TO CART</div>
+                     </div>
+                  </li>
+                  <li class="content__item drug">
+                     <div class="drug__img"><img src="https://i.pinimg.com/564x/2b/66/db/2b66db81ba2345377152f9bdf35ce75f.jpg" alt="Preview"></div>
+                     <div class="drug__body">
+                        <h1 class="drug__title">Paracetamol</h1>
+                        <h2 class="drug__price">$12.33</h2>
+                        <div class="drug__btn">ADD TO CART</div>
+                     </div>
+                  </li>
+                  <li class="content__item drug">
+                     <div class="drug__img"><img src="https://i.pinimg.com/564x/2b/66/db/2b66db81ba2345377152f9bdf35ce75f.jpg" alt="Preview"></div>
+                     <div class="drug__body">
+                        <h1 class="drug__title">Paracetamol</h1>
+                        <h2 class="drug__price">$12.33</h2>
+                        <div class="drug__btn">ADD TO CART</div>
+                     </div>
+                  </li>
+                  <li class="content__item drug">
+                     <div class="drug__img"><img src="https://i.pinimg.com/564x/2b/66/db/2b66db81ba2345377152f9bdf35ce75f.jpg" alt="Preview"></div>
+                     <div class="drug__body">
+                        <h1 class="drug__title">Paracetamol</h1>
+                        <h2 class="drug__price">$12.33</h2>
+                        <div class="drug__btn">ADD TO CART</div>
+                     </div>
+                  </li>
+                  <li class="content__item drug">
+                     <div class="drug__img"><img src="https://i.pinimg.com/564x/2b/66/db/2b66db81ba2345377152f9bdf35ce75f.jpg" alt="Preview"></div>
+                     <div class="drug__body">
+                        <h1 class="drug__title">Paracetamol</h1>
+                        <h2 class="drug__price">$12.33</h2>
+                        <div class="drug__btn">ADD TO CART</div>
+                     </div>
+                  </li>
+                  <li class="content__item drug">
+                     <div class="drug__img"><img src="https://i.pinimg.com/564x/2b/66/db/2b66db81ba2345377152f9bdf35ce75f.jpg" alt="Preview"></div>
+                     <div class="drug__body">
+                        <h1 class="drug__title">Paracetamol</h1>
+                        <h2 class="drug__price">$12.33</h2>
+                        <div class="drug__btn">ADD TO CART</div>
+                     </div>
+                  </li>
+                  <li class="content__item drug">
+                     <div class="drug__img"><img src="https://i.pinimg.com/564x/2b/66/db/2b66db81ba2345377152f9bdf35ce75f.jpg" alt="Preview"></div>
+                     <div class="drug__body">
+                        <h1 class="drug__title">Paracetamol</h1>
+                        <h2 class="drug__price">$12.33</h2>
+                        <div class="drug__btn">ADD TO CART</div>
+                     </div>
+                  </li>
+                  <li class="content__item drug">
+                     <div class="drug__img"><img src="https://i.pinimg.com/564x/2b/66/db/2b66db81ba2345377152f9bdf35ce75f.jpg" alt="Preview"></div>
+                     <div class="drug__body">
+                        <h1 class="drug__title">Paracetamol</h1>
+                        <h2 class="drug__price">$12.33</h2>
+                        <div class="drug__btn">ADD TO CART</div>
+                     </div>
+                  </li>
+                  
+               </ul> -->
+            </div>
+         </div>
+      </main>
+      <div id="shopping-cart" class="shopping-cart">
+         <div class="shopping-cart__content">
+            <h1 class="shopping-cart__title">Shopping Cart</h1>
+            <div class="shopping-cart__body">
+               <div class="shopping-cart__blocks">
+                  <div>
+                     <ul class="shopping-cart__list" id="shopping-cart-list">
+                     </ul>
+                     <div class="item-shopping-cart__total">
+                        <h1>Total $</h1>
+                        <h1 id="shopping-cart-total-price">0.00</h1>
+                     </div>
+                  </div>
+
+                  <form id="shopping-cart-form" action="" class="shopping-cart__form">
+                     <label for="" class="form-shopping-cart__name">
+                        <h1>Name</h1>
+                        <input type="text" name="" id="" class="form-shopping-cart__input">
+                     </label>
+                     <label for="" class="form-shopping-cart__name">
+                        <h1>Email</h1>
+                        <input type="text" name="" id="" class="form-shopping-cart__input">
+                     </label>
+                     <label for="" class="form-shopping-cart__name">
+                        <h1>Phone</h1>
+                        <input type="text" name="" id="" class="form-shopping-cart__input">
+                     </label>
+                     <label for="" class="form-shopping-cart__name">
+                        <h1>Adress</h1>
+                        <input type="text" name="" id="" class="form-shopping-cart__input">
+                     </label>
+                  </form>
+               </div>
+               
+               <div id="shopping-cart-buy-btn" class="shopping-cart__btn">BUY</div>
+            </div>
+         </div>
+      </div>
+      <footer class="footer">
+         <div class="footer__container">
+            <h1 class="footer__title">Created by <a href="">Roman Martseniuk</a></h1>
+         </div>
+      </footer>
+   </div>
+   <script src="./js/index.js"></script>
+</body>
+
+</html>
