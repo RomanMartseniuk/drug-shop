@@ -177,26 +177,22 @@ cartBtn.onclick = () => {
     shoppingCartList.appendChild(el);
   });
 
-  console.log(
-    document.querySelectorAll("[class=item-shopping-cart__delete__btn]")
-  );
-
   document
     .querySelectorAll("[class=item-shopping-cart__delete__btn]")
     .forEach((item) => {
       item.onclick = (e) => {
         let res = [];
         for (let i = 0; i < cart.length; i++) {
-          if (cart[i].id != e.target.dataset.id) res.push(cart[i]);
+          if (i != e.target.dataset.id) res.push(cart[i]);
         }
         cart = res;
-        console.log(cart);
         let remEl;
         for (let i = 0; i < shoppingCartList.children.length; i++) {
           if (shoppingCartList.children[i].dataset.id === e.target.dataset.id)
             remEl = shoppingCartList.children[i];
         }
         shoppingCartList.removeChild(remEl);
+        calcTotalPrice();
       };
     });
 
